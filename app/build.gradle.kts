@@ -4,8 +4,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    id("com.google.devtools.ksp") version "2.2.0-Beta1"
-
+    id("com.google.devtools.ksp") version "1.9.22-1.0.17"
 
 
 }
@@ -15,7 +14,7 @@ val localProperties = File(rootProject.rootDir, "local.properties").reader().use
 val apiKey = localProperties.getProperty("RECIPE_API_KEY", "")
 
 android {
-    namespace = "com.example.Recipeapp"
+    namespace = "com.example.recipeapp"
     compileSdk = 35
 
     defaultConfig {
